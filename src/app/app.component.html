@@ -1,0 +1,8 @@
+<h1>Parent module</h1>
+
+<p>Login status in parent: {{loginStatus}}</p>
+
+<app-child (updateLoginStatusInParent)="updateLoginStatus($event)"></app-child>
+
+<app-second-child [loginStatus]="loginStatus"></app-second-child>
+
